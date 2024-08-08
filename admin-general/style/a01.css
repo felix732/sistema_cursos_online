@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    width: 100%;
+    margin: auto;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 400%;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+    20% {
+        margin-left: 0;
+    }
+    25% {
+        margin-left: -100%;
+    }
+    45% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    75% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: -300%;
+    }
+}
+
+.forum {
+    background: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*con esto, los items se centran entre arriba y abajo*/
+    padding: 5px 10%;
+    height: 70px;
+}
+
+.forum li {
+    list-style: none;
+    /*con esto se le quitan los puntos a las listas*/
+    display: inline-block;
+    /*con esto se alinean las tablas*/
+    padding: 0 20px;
+    /*el 20px es la distancia al rededor de las lineas*/
+}
+
+.forum li a:hover {
+    transform: scale(1.2)
+}
+
+.forum li a {
+    text-decoration: none;
+}
+
+
+/*-----------------------------------------------------------------------*/
+
+
+/*a continuacion la caja de biblioteca*/
+
+.bib_title h1 {
+    font-family: "arial";
+    font-size: 17px;
+    padding: 30px 30px 30px 30px;
+}
+
+
+/*ahora vienen las imagenes*/
+
+.container {
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    justify-content: center;
+    width: 300px;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.7);
+    transform: translateY(-3%);
+}
+
+.card img {
+    width: 100%;
+    height: 210px;
+}
+
+.card .contenido {
+    padding: 15px;
+    text-align: center;
+}
+
+.card .contenido p {
+    line-height: 1.5;
+    /*esto hace que la linea de parrafo tenga un espacio cada una*/
+    color: #6a6a6a;
+}
+
+.card .contenido h4 {
+    font-weight: 400;
+    /*con esto se le reduce la negrita a las letras*/
+    margin-bottom: 15px;
+    /*para que empuje hacia abajo los parrafos*/
+}
+
+.card .contenido a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.card .contenido a:hover {
+    background: #2fb4cc;
+    color: #FFF;
+}
+
+
+/*------------------------------------a continuacion los numeros -----------------------*/
+
+.barra-inferior {
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    padding: 30px 10px 30px 10px;
+    background: white;
+    margin-bottom: 40px;
+    margin: 10px 30px 10px 40px;
+    border-radius: 20px;
+}
+
+.numeros {
+    align-items: center;
+    text-align: center;
+}
+
+.numeros h3 {
+    align-items: center;
+    display: inline-block;
+    font-size: 40px;
+    padding: 0px 30px;
+}
+
+.numeros h3 a {
+    align-items: center;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.numeros h3 .p_1 {
+    align-items: center;
+    background: #ff8000;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.numeros h3 a:hover {
+    transform: scale(1.2);
+}
+
+
+/*---------------------------------------ahora la publicidad---------------*/
+
+.publicidad {
+    align-items: center;
+    background: #FFF;
+    text-align: right;
+    margin: 10px 30px 10px 40px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.publicidad p {
+    font-size: 10px;
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+    .slider,
+    .slider ul,
+    .slider img {
+        height: 100vh;
+    }
+}

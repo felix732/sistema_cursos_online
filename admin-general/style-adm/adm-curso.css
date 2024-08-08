@@ -1,0 +1,86 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "arial";
+	font-size: 16px;
+}
+body{
+	background-color: #fff;
+}
+header{
+	background-color: #FFF;
+	display: flex;
+	 /* position: fixed; para fijar el contenido*/
+	justify-content: space-between;
+	align-items: center;
+	height: 80px;
+	padding: 5px 10%;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);	
+
+}
+header .logo{
+	cursor: pointer;
+
+}
+
+header .logo img{
+	height: 50px;
+	transition: all 0.3s;
+}
+header .logo img:hover{
+	transform: scale(1.2);
+}
+
+header .nav-links{
+	list-style: none;
+
+}
+header .nav-links li{
+	display: inline-block;
+	padding: 0 20px;
+}
+header .nav-links a{
+	font-size: 16px;
+	text-decoration: none;
+}
+/*-------------------ahora vienen las cards---------------------*/
+.contenedor{
+	align-items: center;
+	display: flex;
+	margin:20px;
+	justify-content: center;
+	padding: 20px;
+}
+.tarjeta{
+	background-color: #fff;
+	margin: 0 20px;
+	text-align: center;
+	border-radius: 10px;
+	width: 300px;
+	height: 400px;
+	box-shadow:  0px 1px 10px rgba(0,0,0,0.2);
+	flex-wrap: wrap;
+}
+.contenedor .tarjeta img{
+	border-radius: 10px 10px 0px 0px;
+	width: 300px;
+	height: 200px;
+	margin-bottom: 10px;
+}
+
+.contenedor .tarjeta h3{
+	margin-bottom: 40px;
+}
+.contenedor .tarjeta p{
+	
+	margin-bottom: 40px;
+}
+.contenedor .tarjeta a{
+	background-color: #239089;
+	padding: 10px;
+	border-radius: 5px;
+	text-decoration: none;
+	color: white;
+
+}

@@ -1,0 +1,172 @@
+/*a continuacion se formatea el documento*/
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "arial";
+	font-size: 15px;
+}
+
+body{
+	background-color: #00b7ff;
+	justify-content: center;
+	align-items: center;
+}
+.contenedor{
+	background-color: hsl(0, 0%, 100%);
+	margin-top: 25px;
+	margin: 100px;
+	padding: 50px;
+	border-radius: 15px;
+	font-family:"arial";
+	width: 50%;
+	height: 550px;
+
+	
+}
+.header{
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center; /*con esto, los items se centran entre arriba y abajo*/
+	height: 70px; /*con esto se le da altura a la barra*/
+	padding: 5px 10%; 
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+
+}
+
+.header .logo{
+	cursor: pointer; /*con esto se muestra que se le puede poner la manito al logo*/
+}
+
+header .logo img{ /*con esto llamo al header, luego a la clase "logo" y luego a la imagen dentro de esa clase*/
+	height: 50px;
+	width: auto;
+	transition: all 0.3s; /*con esto es la transicion*/
+}
+
+.reistro{
+	background-color: #ff8000;
+	border-radius: 10px 10px 10px 10px;
+	padding: 20px 10px 10px 10px;
+
+}
+
+						/*a continuacion se realiza lo que hace que crezca el logo*/
+.header .logo img:hover{
+	transform: scale(1.2); /*con esto se hace que crezca el logo*/
+}
+
+/*--------------------------------------------------------------------------------------------*/
+.facilitador{
+	background-color: #0051ff;
+	color: #fff; 
+	width: 150px;
+	height: 50px;
+	display:inline-block ;
+	padding: 10px 20px;
+	text-align: center;
+	font-size: 16px;
+	margin: 4px 2px;
+	border-radius:10px 10px 10px 10px ;
+}
+
+.estudiante {
+background-color: #09ad1d;
+	color: #ffffff;
+	width: 150px;
+	height: 50px;
+	display:inline-block ;
+	padding: 10px 20px;
+	text-align: center;
+	font-size: 16px;
+	margin: 4px 2px;
+	border-radius:10px 10px 10px 10px ;
+
+}
+
+/*ahora vienen las imagenes*/
+.container{
+	width: 100%;
+	display: flex;
+	max-width: 1100px;
+	
+}
+
+.container .card{
+	width: 330px;
+	height: 430px;
+	border-radius: 10px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	margin: 20px;
+	text-align: center;
+	transition: all 0.25s;
+}
+.container .card:hover{
+	transform: translateY(-15px);
+	box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+	
+}
+
+.container .card img{
+	width: 330px;
+	height: 220px;
+}
+
+.container .card h4{
+	font-weight: 600;
+}
+
+.container .card p{
+	padding: 0 1rem;
+	font-size: 16px;
+	font-weight: 300;
+}
+.container .card a{
+	font-weight: 500;
+	text-decoration: none;
+	color: #3498DB;
+}
+/*ahora chicos vamos a poner el no me la containe1*/
+.container1{
+	width: 100%;
+	display: flex;
+	max-width: 1100px;
+	transform: translateX(50%) translateY(-100%);
+	
+}
+.container1 .card{
+	width: 330px;
+	height: 430px;
+	border-radius: 10px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	margin: 20px;
+	text-align: center;
+	transition: all 0.25s;
+}
+.container1 .card:hover{
+	transform: translateY(-15px);
+	box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2)
+}
+
+.container1 .card img{
+	width: 330px;
+	height: 220px;
+}
+
+.container1 .card h4{
+	font-weight: 600;
+}
+
+.container1 .card p{
+	padding: 0 1rem;
+	font-size: 16px;
+	font-weight: 300;
+}
+.container1 .card a{
+	font-weight: 500;
+	text-decoration: none;
+	color: #3498DB;
+}

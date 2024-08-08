@@ -1,0 +1,68 @@
+/*a continuacion se formatea el documento*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "arial";
+    font-size: 14px;
+}
+
+body {
+    background-color: #73c2fb;
+}
+
+.header .logo {
+    cursor: pointer;
+    /*con esto se muestra que se le puede poner la manito al logo*/
+}
+
+header .logo img {
+    height: 50px;
+    width: auto;
+    transition: 0.3s;
+    transform: translate(-70%, 0);
+}
+
+.reistro {
+    background-color: #ff8000;
+    border-radius: 10px 10px 10px 10px;
+    padding: 20px 10px 10px 10px;
+}
+
+.header .nav-links {
+    list-style: none;
+    /*con esto se le quitan los puntos a las listas*/
+    background-color: #73c2fb;
+    padding: 10%;
+    border-radius: 10px;
+    font-size: 100%;
+    width: 120%;
+    transform: translateY(50%);
+}
+
+.header .nav-links li {
+    display: inline-block;
+    /*con esto se alinean las tablas*/
+    padding: 0 20px;
+    /*el 20px es la distancia al rededor de las lineas*/
+}
+
+
+/*con esto se le añade el estilo a las letras*/
+
+.header .nav-links li:hover {
+    transform: scale(1.2);
+    /*con esto hace crecer las letras*/
+}
+
+.header .nav-links li a:hover {
+    /*con esto se le cambia el color al zoom de las letras*/
+    color: black;
+}
+
+
+/*a continuacion se le hacen unos detalles a los links*/
+
+
+/*--------------------------------------------------------------------------------------------*/

@@ -1,0 +1,88 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #00aeff;
+}
+
+.contenedor {
+    background-color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    width: 155vh;
+    margin: 50px;
+    border-radius: 25px;
+    padding: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    padding: 25px;
+}
+
+.conteiner {
+    display: flex;
+    align-items: center;
+}
+
+.pass {
+    padding: 8px 25px;
+    margin-bottom: -20px;
+    border-radius: 10px;
+    width: 70%;
+    margin-left: 10%;
+}
+
+.bx {
+    font-size: 25px;
+    transform: translateX(-150%) translateY(25%);
+    cursor: pointer;
+    color: grey;
+}
+
+input {
+    text-align: center;
+    padding: 8px 25px;
+    text-transform: uppercase;
+    margin-top: 7px;
+    border-radius: 10px;
+}
+
+.enviador {
+    width: 35vh;
+    cursor: pointer;
+    background-color: #005eff;
+    color: #fff;
+    border: none;
+}
+
+.enviador:hover {
+    transform: scale(1.03);
+}
+
+.imagen {
+    width: 400px;
+    border-radius: 25px;
+    margin-left: 45px;
+}
+
+.volver-atras {
+    padding: 8px 25px;
+    margin-top: 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.volver-atras a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.volver-atras:hover {
+    transform: scale(1.05);
+}

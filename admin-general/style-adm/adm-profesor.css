@@ -1,0 +1,128 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "arial";
+	font-size: 16px;
+	box-sizing: border-box;
+}
+body{
+	background-color: #fff;
+}
+header{
+	background-color: #FFF;
+	display: flex;
+	 /* position: fixed; para fijar el contenido*/
+	justify-content: space-between;
+	align-items: center;
+	height: 80px;
+	padding: 5px 10%;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);	
+
+}
+.container{
+	border: solid 1px;
+	border-radius: 10px;
+	font-size: 5%;
+	padding: 5px;
+	margin: 100px;
+}
+table{
+	color: black;
+	font-size: 14px;
+	table-layout: fixed;
+	border-collapse: collapse;
+}
+thead{
+	background:rgb(255, 255, 255);
+}
+th{
+	padding: 20px 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+td{
+	padding: 15px;
+	border-bottom: solid 1px #cEF7E7;
+	border: white;
+	font-size: 15px;
+	margin: 200px;
+}
+header .logo{
+	cursor: pointer;
+
+}
+
+header .logo img{
+	height: 50px;
+	transition: all 0.3s;
+}
+header .logo img:hover{
+	transform: scale(1.2);
+}
+
+header .nav-links{
+	list-style: none;
+
+}
+header .nav-links li{
+	display: inline-block;
+	padding: 0 20px;
+}
+header .nav-links a{
+	font-size: 16px;
+	text-decoration: none;
+}
+.contenido-gral .menu-izquierdo{
+	background-color: #bdbdbd;
+	padding: 10px;
+}
+/* AQUI AHORA VIENE LA TABLA */
+.tabla-profe{
+	justify-content: center;
+	margin: 0px 10px;
+	margin-top: 50px;
+	text-align: center;
+	background-color: #cEF7E7;
+	padding: 10px;
+	border-radius: 10px;
+}
+input{
+	align-items: center;
+	text-decoration: none;
+	width: 150px;
+	padding:4px;
+	border-radius: 3px;
+	border: none;
+	margin-top: 10px;
+	color: 0D0907;
+	text-align: center;
+
+}
+
+/* ESTE ES EL RECUADRO VERDE GRANDE DE INICIO */
+.barra-inferior{
+	background-color: #239089;
+	padding: 80px;
+	margin: 30px 100px;
+	border-radius: 30px;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+
+}
+.barra-inferior h1{
+	color: rgb(255, 255, 255);
+	font-size: 24px;
+}
+.volver{
+	margin-top: 20px;
+	padding: 20px;
+	cursor: pointer;
+		margin: 20px 5px;
+}
+.bx{
+	width: 10px;
+	font-size: 30px ;
+	cursor: pointer;
+	background-color:  #cEF7E7;
+	padding: 0px;
+}

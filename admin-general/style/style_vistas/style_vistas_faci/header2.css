@@ -1,0 +1,100 @@
+/*a continuacion se formatea el documento*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "arial";
+    font-size: 14px;
+}
+
+body {
+    background-color: #fff;
+}
+
+.header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*con esto, los items se centran entre arriba y abajo*/
+    height: 70px;
+    /*con esto se le da altura a la barra*/
+    padding: 5px 10%;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header .logo {
+    cursor: pointer;
+    /*con esto se muestra que se le puede poner la manito al logo*/
+}
+
+header .logo img {
+    /*con esto llamo al header, luego a la clase "logo" y luego a la imagen dentro de esa clase*/
+    height: 50px;
+    width: auto;
+    transition: all 0.3s;
+    /*con esto es la transicion*/
+}
+
+.reistro {
+    background-color: #ff8000;
+    border-radius: 10px 10px 10px 10px;
+    padding: 20px 10px 10px 10px;
+}
+
+.bienvenido {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+    transform: translateX(10%) translateY(50%);
+}
+
+
+/*a continuacion se realiza lo que hace que crezca el logo*/
+
+.header .logo img:hover {
+    transform: scale(1.2);
+    /*con esto se hace que crezca el logo*/
+}
+
+.header .nav-links {
+    list-style: none;
+    /*con esto se le quitan los puntos a las listas*/
+}
+
+.header .nav-links li {
+    display: inline-block;
+    /*con esto se alinean las tablas*/
+    padding: 0 20px;
+    /*el 20px es la distancia al rededor de las lineas*/
+}
+
+
+/*con esto se le añade el estilo a las letras*/
+
+.header .nav-links li:hover {
+    transform: scale(1.2);
+    /*con esto hace crecer las letras*/
+}
+
+.header .nav-links li a:hover {
+    /*con esto se le cambia el color al zoom de las letras*/
+    color: black;
+}
+
+
+/*a continuacion se le hacen unos detalles a los links*/
+
+.header .nav-links a {
+    font-size: 17px;
+    color: #162B4E;
+    /*con esto se le cambia el color a la letra*/
+    text-decoration: none;
+}
+
+
+/*--------------------------------------------------------------------------------------------*/
